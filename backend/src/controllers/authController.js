@@ -22,8 +22,8 @@ const login = (req, res) => {
 
   // 👤 EMPLOYEE LOGIN (email based)
   const employee = employees.find(
-    (e) => e.email === email
-  );
+  (e) => e.email === email && e.password === password
+);
 
   if (employee) {
     const user = {
