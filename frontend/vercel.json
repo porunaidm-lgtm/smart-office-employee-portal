@@ -1,8 +1,2 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "https://smart-office-employee-portal.onrender.com/api/$1"
-    }
-  ]
 }
