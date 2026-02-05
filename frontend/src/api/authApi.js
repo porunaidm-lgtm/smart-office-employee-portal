@@ -1,10 +1,7 @@
-import axiosClient from "./axiosClient";
-
-export const loginApi = async (data) => {
+export const loginApi = async (payload) => {
   const res = await axiosClient.post(
     "/api/auth/login",
-    data
+    payload
   );
-
   return res.data;
 };
