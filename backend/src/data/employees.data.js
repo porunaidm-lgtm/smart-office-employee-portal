@@ -51,6 +51,7 @@ const employees = Array.from({ length: 60 }, (_, i) => {
     first_name,
     last_name,
     email: `${first_name.toLowerCase()}.${last_name.toLowerCase()}@company.com`,
+    password: "123456",
     phone: `9${800000000 + id}`,
     avatar: `https://i.pravatar.cc/150?img=${id}`,
     gender: id % 2 === 0 ? "Female" : "Male",
